@@ -14,7 +14,7 @@
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" metod="post">
       <fieldset class="fieldset">
         <legend>Personal information</legend>
-        <label for="fsurname" class="label">
+        <label class="label">
           Surname:
           <input
             type="text"
@@ -23,7 +23,7 @@
             autocomplete="off"
           >
         </label>
-        <label for="fname" class="label">
+        <label class="label">
           Name:
           <input
             type="text"
@@ -32,7 +32,7 @@
             autocomplete="off"
           >
         </label>
-        <label for="fage" class="label">
+        <label class="label">
           How old are You?
           <input
             type="number"
@@ -43,7 +43,7 @@
             value="12"
           >
         </label>
-        <label for="fbirth" class="label">
+        <label class="label">
           Full date of birth:
           <input
             type="date"
@@ -51,7 +51,7 @@
             id="fbirth"
           >
         </label>
-        <label for="fterms" class="label">
+        <label class="label">
           I accept the term of the agreement
           <input
             type="checkbox"
@@ -64,7 +64,7 @@
         <legend>
           Registration
         </legend>
-        <label for="femail" class="label">
+        <label class="label">
           E-mail:
           <input
             type="email"
@@ -74,9 +74,11 @@
             required
           >
         </label>
-        <label for="fpassword" class="label">
+        <label class="label">
           Password:
-          <input type="password" name="fpassword"
+          <input
+            type="password"
+            name="fpassword"
             id="fpassword"
             minlength="6"
             maxlength="10"
@@ -86,14 +88,15 @@
       <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
         <div class="label">
-          <label for="fcatsyes">Do you love cats?
+          Do you love cats?
+          <label>
             <input
               type="radio"
               name="fcats"
               id="fcatsyes"
             >Yes
           </label>
-          <label for="fcatsno">
+          <label>
             <input
               type="radio"
               name="fcats"
@@ -101,11 +104,13 @@
             >No
           </label>
         </div>
-        <label for="fcolor" class="label">
+        <label class="label">
           What is your favorite color?
-          <input type="color" name="fcolor">
+          <input
+            type="color"
+            name="fcolor">
         </label>
-        <label for="ftime" class="label">
+        <label class="label">
           What time do you go to bed?
           <input
             type="time"
@@ -113,7 +118,7 @@
             step="1"
           >
         </label>
-        <label for="fcars" class="label">
+        <label class="label">
           What are your favorite brand of cars?
           <select name="fcars" multiple>
             <option value="bmw">BMW</option>
@@ -121,7 +126,7 @@
             <option value="lada">Lada</option>
           </select>
         </label>
-        <label for="frate" class="label">
+        <label class="label">
           How do you rate our work?
           <input
             type="range"
@@ -134,16 +139,15 @@
         <legend>
           Additional info:
         </legend>
-        <label for="fcomment" class="label">
+        <label class="label">
           Comments:
           <textarea
             name="fcomment"
             cols="30"
             rows="2"
-          >
-          </textarea>
+         ></textarea>
         </label>
-        <label for="frecommend" class="label">
+        <label class="label">
           Would you recommend us?
           <select name="frecommend">
             <option value="yes">yes</option>
